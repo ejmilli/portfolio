@@ -1,0 +1,16 @@
+/* Basic centering for the puzzle screen */
+#puzzle-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+}
+
+/* This class hides the portfolio until solved */
+.hidden {
+    display: none;
+}
