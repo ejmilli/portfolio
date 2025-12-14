@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza John | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">EJ<span class="logo-accent">.</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-title">Hello, I'm <span class="name-highlight">Eliza John</span></h1>
+                </div>
+                <p class="hero-subtitle">Web Developer & IT Enthusiast</p>
+                <p class="hero-description">Highly passionate about building cool things and turning ideas into reality through code.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="tech-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">CSS3</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="robot-container">
+                    <svg class="robot" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Antenna -->
+                        <line class="antenna" x1="100" y1="20" x2="100" y2="5" stroke="#3B82F6" stroke-width="2"/>
+                        <circle class="antenna-tip" cx="100" cy="5" r="3" fill="#4ADE80"/>
+                        
+                        <!-- Head -->
+                        <rect class="head" x="70" y="20" width="60" height="50" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                        
+                        <!-- Eyes -->
+                        <circle class="eye eye-left" cx="85" cy="40" r="8" fill="#4ADE80"/>
+                        <circle class="eye eye-right" cx="115" cy="40" r="8" fill="#4ADE80"/>
+                        <circle class="pupil pupil-left" cx="87" cy="40" r="3" fill="#0F172A"/>
+                        <circle class="pupil pupil-right" cx="117" cy="40" r="3" fill="#0F172A"/>
+                        
+                        <!-- Mouth -->
+                        <path class="mouth" d="M 85 55 Q 100 60 115 55" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                        
+                        <!-- Red accent on head -->
+                        <rect x="95" y="25" width="10" height="3" fill="#EF4444"/>
+                        
+                        <!-- Body -->
+                        <rect class="body" x="60" y="75" width="80" height="90" rx="15" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                        
+                        <!-- Chest panel -->
+                        <rect x="80" y="95" width="40" height="30" rx="5" fill="#0F172A" stroke="#4ADE80" stroke-width="1"/>
+                        <circle cx="90" cy="110" r="3" fill="#4ADE80"/>
+                        <circle cx="110" cy="110" r="3" fill="#EF4444"/>
+                        <line x1="85" y1="120" x2="115" y2="120" stroke="#3B82F6" stroke-width="2"/>
+                        
+                        <!-- Left Arm -->
+                        <g class="arm arm-left">
+                            <rect x="42" y="40" width="18" height="45" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                            <circle cx="51" cy="55" r="4" fill="#FBBF24"/>
+                            <!-- Hand waving -->
+                            <g class="hand hand-left">
+                                <rect x="40" y="10" width="20" height="25" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                                <line x1="44" y1="20" x2="44" y2="29" stroke="#4ADE80" stroke-width="1"/>
+                                <line x1="49" y1="20" x2="49" y2="29" stroke="#4ADE80" stroke-width="1"/>
+                                <line x1="54" y1="20" x2="54" y2="29" stroke="#4ADE80" stroke-width="1"/>
+                            </g>
+                        </g>
+                        
+                        <!-- Right Arm -->
+                        <g class="arm arm-right">
+                            <rect x="145" y="80" width="25" height="60" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                            <circle cx="157.5" cy="95" r="4" fill="#FBBF24"/>
+                            <!-- Hand -->
+                            <rect x="152" y="145" width="20" height="25" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                            <line x1="157" y1="155" x2="157" y2="165" stroke="#4ADE80" stroke-width="1"/>
+                            <line x1="162" y1="155" x2="162" y2="165" stroke="#4ADE80" stroke-width="1"/>
+                            <line x1="167" y1="155" x2="167" y2="165" stroke="#4ADE80" stroke-width="1"/>
+                        </g>
+                        
+                        <!-- Legs -->
+                        <rect class="leg leg-left" x="70" y="170" width="25" height="60" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                        <rect class="leg leg-right" x="105" y="170" width="25" height="60" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                        
+                        <!-- Feet -->
+                        <ellipse cx="82.5" cy="235" rx="18" ry="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                        <ellipse cx="117.5" cy="235" rx="18" ry="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                    </svg>
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Development</h3>
+                    <p>Creating responsive and dynamic web applications with modern technologies.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Innovation</h3>
+                    <p>Always exploring new tech and pushing boundaries to build cool things.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Passion</h3>
+                    <p>Deeply passionate about IT and solving real-world problems with code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-screenshots">
+                        <img src="assets/s.png" alt="GraphQL Profile Page Screenshot 1" class="project-img img-1">
+                        <img src="assets/s1.png" alt="GraphQL Profile Page Screenshot 2" class="project-img img-2">
+                    </div>
+                    <h3>GraphQL Profile Dashboard</h3>
+                    <p>An interactive profile page built with GraphQL API, featuring authentication, data visualization with custom SVG graphs, and real-time statistics tracking XP progression, audit ratios, and project achievements.</p>
+                    <div class="project-tags">
+                        <span class="tag">GraphQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SVG</span>
+                        <span class="tag">JWT Auth</span>
+                    </div>
+                    <a href="https://github.com/ejmilli/GraphQL" target="_blank" class="btn btn-small">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🎨</div>
+                    <h3>Project Two</h3>
+                    <p>Creative portfolio website with stunning animations</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">⚙️</div>
+                    <h3>Project Three</h3>
+                    <p>Backend API with advanced features and security</p>
+                    <div class="project-tags">
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <p class="contact-subtitle">Let's build something amazing together!</p>
+            <div class="contact-buttons">
+                <a href="mailto:eliza@example.com" class="btn btn-primary">Email Me</a>
+                <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Eliza John. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
