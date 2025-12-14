@@ -489,41 +489,24 @@ body {
 
 .project-screenshots {
     position: relative;
-    height: 280px;
+    height: 300px;
     margin-bottom: var(--spacing-md);
-    overflow: visible;
-}
-
-.project-img {
-    position: absolute;
-    width: 80%;
-    height: auto;
+    overflow: hidden;
     border-radius: 8px;
     border: 2px solid var(--accent-secondary);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.3s ease;
 }
 
-.project-img.img-1 {
-    top: 10px;
-    left: -10px;
-    z-index: 1;
-    transform: rotate(-8deg);
-}
-
-.project-img.img-2 {
-    top: 40px;
-    right: -10px;
-    z-index: 2;
-    transform: rotate(8deg);
-}
-
-.project-card:hover .project-img.img-1 {
-    transform: rotate(-10deg) translateY(-10px);
-}
-
-.project-card:hover .project-img.img-2 {
-    transform: rotate(10deg) translateY(-10px);
+.project-card:hover .project-screenshots {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(74, 222, 128, 0.3);
 }
 
 .project-image {
@@ -548,6 +531,12 @@ body {
     gap: var(--spacing-xs);
     flex-wrap: wrap;
     margin-bottom: var(--spacing-sm);
+}
+
+.project-buttons {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
 }
 
 /* ===== CONTACT SECTION ===== */
